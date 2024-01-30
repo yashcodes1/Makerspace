@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <nav class="navbar navbar-inverse" margin="auto property"  style="background-color: #FF; text-color: #89CFF0;">
+    <div class="container-fluid">
+      <ul class="nav navbar-nav" >
+        <li ><a href="index.html">Home</a></li>
+        <li><a href="reserve.html">Reserve Equipment</a></li>
+        <li><a href="AboutUs.html">About Us</a></li>
+        <li class="active"><a href="reserve.html">Membership Info</a></li>
+        <li><a href="tutorials.html">Tutorials</a></li>
+        <li><a href="Events.html">Events and Classes</a></li>
+      </ul>
+      </ul>
+    </div>
+  </nav>
+<h2 class='flipY'>Reservation Sign-up</h2>
+
+<form action="/reserve.html">
+  <label for="products" class="animate-charcter">List of available Products to reserve:</label>
+  <select name="" id="selProdcuts">
+    <option value="Select a Product">Select a Product</option>
+    <option value="3D Printers">3D Printers</option>
+    <option value="Electronics">Work Spaces</option>
+    <option value="Laser Cutters">Laser Cutters</option>
+    <option value="Sewing">Sewing Machines</option>
+  </select>
+  <br><br>
+  <label for="start">Choose date:</label>
+
+  <input type="date" id="start" name="trip-start" value="2024-01-01" min="2024-01-01" max="2025-12-31" />
+
+  <section id="reservation_section">
+
+      <form action="/submit-reseration-section" method="post">
+<br>        
+          <label for="name1">First Name:</label>
+          <input type="text" id="name1" name="name1" required>
+<br>
+<br>        
+        <label for="name2">Last Name:</label>
+        <input type="text" id="name2" name="name2" required>
+<br>    
+<br>        
+        <label for="email111">Email:</label>
+        <input type="text" id="email111" name="email111" required>
+
+
+      </form>
+  </section>
+  </form>
+<br>
+<button onclick="myFunction()">Submit</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Your product reservation is submitted successfully!";
+}
+</script> 
+  
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserve Equipment</title>
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+      }
+
+      .moving-text {
+        position: absolute;
+        font-size: 24px;
+        white-space: nowrap;
+      }
+</body>
+</html>

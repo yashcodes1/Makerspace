@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <title>Membership</title>
+</head>
+
+<body>
+  <header>
+    <div class="jumbotron text-center" style="background-color: #89CFF0;">
+      <h1> </h1><br>
+      <!--<h2 class='flipY'>  The Amaze! Squad</h2><br>-->
+      <div class="waviy" style="background-color: #89CFF0;">
+        <span style="--i:1; background-color: #89CFF0;" </span>
+          <span style="--i:2">Membership</span>
+          <span style="--i:3">Info</span>
+      </div><br>
+
+      <br><br>
+
+    </div>
+  </header>
+  <!--Start of Navbar Menu block-->
+  <nav class="navbar navbar-inverse" margin="auto property" style="background-color: #FF; text-color: #89CFF0;">
+    <div class="container-fluid">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="reserve.html">Reserve Equipment</a></li>
+        <li><a href="AboutUs.html">About Us</a></li>
+        <li class="active"><a href="membership.html">Membership Info</a></li>
+        <li><a href="tutorials.html">Tutorials</a></li>
+        <li><a href="Events.html">Events and Classes</a></li>
+      </ul>
+      </ul>
+    </div>
+  </nav>
+
+
+  <p class="animate-charcter"><b>Yearly Plan: $899.99
+      <br>
+      Monthly Plan: $99.99
+      <br>
+      One Time Pass: $19.99</b></p>
+  <h3>Monthly Plan:</h3>
+  <section id="events">
+    <form action="">
+      <label for="first_name">First name: </label>
+      <input type="text" id="first_name" name="first_name"><br><br>
+      <label for="last_name">Last name: </label>
+      <input type="text" id="last_name" name="last_name"><br><br>
+      <label for="credit_card">Card Number: </label>
+      <input type="text" id="credit_card" name="credit_card"><br><br>
+
+    </form>
+    <button id="Button1" onclick="myFunction1()">Submit</button>
+
+    <p id="demo1"></p>
+
+   
+    <h3>Yearly Plan:</h3>
+    <section id="events">
+      <form action="">
+        <label for="first_name">First name: </label>
+        <input type="text" id="first_name" name="first_name"><br><br>
+        <label for="last_name">Last name: </label>
+        <input type="text" id="last_name" name="last_name"><br><br>
+        <label for="credit_card">Card Number: </label>
+        <input type="text" id="credit_card" name="credit_card"><br><br>
+      </form>
+    </section>
+    <button id="Button2" onclick="myFunction2()">Submit</button>
+
+    <p id="demo2"></p>
+<script>
+  function myFunction1() {
+
+         {
+          document.getElementById("demo1").innerHTML = "Your product reservation is submitted successfully!";
+        }
+      }
+    
+      function myFunction2() {
+
+         {
+          document.getElementById("demo2").innerHTML = "Your product reservation is submitted successfully!";
+        }
+      }
+    </script>
+    <footer align="center">
+      <p>© 2023 & Issue Makerspace. This site reserves all rights to the content</p>
+    </footer>
+</body>
+
+</html>

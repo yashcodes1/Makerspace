@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Makerspace</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/boou9tstrap.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+      #gfg1 {
+          animation-name: text;
+          animation-duration: 5s;
+          animation-iteration-count: infinite;
+      }
+
+      #geek1 {
+          
+          
+          font-weight: bold;
+          color: #090;
+          padding-bottom: 5px;
+      }
+
+      #geek2 {
+         
+          font-weight: bold;
+          color: #090;
+          
+      }
+
+      @keyframes text {
+          from {
+              margin-top: 400px;
+          }
+
+          to {
+              margin-top: 0px;
+          }
+      }
+  </style>
+
+</head>
+
+<body>
+
+
+<!--Header-->
+<header>
+<div class="jumbotron text-center" style="background-color: #89CFF0;">
+  <h1 > </h1><br>
+  <!--<h2 class='flipY'>  The Amaze! Squad</h2><br>-->
+  <div class="waviy" style="background-color: #89CFF0;">
+   <span style="--i:1; background-color: #89CFF0;">The</span>
+   <span style="--i:2">Issue</span>
+   <span style="--i:3">Makerspace</span>
+ </div><br>
+  
+  <br><br>
+    
+</div>
+</header>
+
+<!--Start of Navbar Menu block-->
+ <nav class="navbar navbar-inverse" margin="auto property"  style="background-color: #FF; text-color: #89CFF0;">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav" >
+      <li class="active"><a href="index.html">Home</a></li>
+      <li><a href="reserve.html">Reserve Equipment</a></li>
+
+      <li><a href="AboutUs.html">About Us</a></li>
+      <li><a href="membership.html">Membership Info</a></li>
+      <li><a href="tutorials.html">Tutorials</a></li>
+      <li><a href="Events.html">Events and Classes</a></li>
+    </ul>
+    </ul>
+  </div>
+</nav>
+<!--End of Navbar Menu block-->
+
+<div class="container">
+
+   <h3>Welcome to "The Issue Makerspace"</h3>
+
+  
+  
+
+  <div class="row">
+    
+    <div class="col-sm-8">
+      <!--Start of Slideshow code block-->
+          <div class="slideshow-container">
+
+          <div class="mySlides fade">
+             <div class="text"></div>
+             <img src="/static/images.jfif" style="width:100%" height = "415px" width = "800px">
+          </div>
+
+          <div class="mySlides fade">
+             <div class="text"> </div>
+             <img src="/static/download (5).jfif" style="width:100%" height = "415px" width = "800px" >
+          </div>
+
+          <div class="mySlides fade">
+             <div class="text"></div>
+             <img src="/static/download (6).jfif" style="width:100%" height = "415px" width = "800px">
+          </div>
+
+          </div><br>
+
+          <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+      <script>
+      let slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+
+      function checkButton() {
+                  if(document.getElementById('option-two').checked) {
+                      document.getElementById("disp").innerHTML
+                          = " You got it!";
+                  }
+                  else {
+                      document.getElementById("disp").innerHTML
+                          = "Try again! You can do it!";
+                  }
+              }
+      </script>
+      <!--End of Slideshow code block-->
+
+
+      </div>
+    <div class="col-sm-4">
+      <h3></h3>
+      <p>Construct your Favorite Projects</p>
+        
+      
+      <div id="gfg1">
+          <div id="geek1">Hours of Operation: Monday - Friday: 8:00 am - 5:00 pm</div>
+          <div id="geek2">Saturday & Sunday: 10:00 am - 4:00 pm</div>
+        <br>
+        <br>
+        <p class="animate-charcter">
+          <a href="membership.html">Sign up for a membership to Issue Makerspace here!</a></p>
+      </div>
+     
+
+		    <h3 id="disp" style= "background-color:44107a;"> </h3>
+
+
+</div>
+    </div>
+
+  </div>
+</div>
+
+<div class="container">
+
+<div class="row" width = "50%" padding = 200px>
+    <div class="col-sm-3">
+      
+   <div class="col-sm-3">
+
+    
+
+    </div>
+<div class="col-sm-3">
+ 
+<div class="col-sm-3">
+
+  </div>
+</div>
+</div>
+  <h2>Reservation Sign-up</h2>
+
+    <form action="/reserve.html">
+
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style>
+          body {
+            margin: 0;
+
+          }
+
+          .moving-text {
+            position: absolute;
+            font-size: 24px;
+            white-space: nowrap;
+          }
+        </style>
+      </head>
+      <body>
+        
+        <div class="moving-text" id="movingText">Reserve our Items Today!</div>
+        <script>
+          const movingText = document.getElementById('movingText');
+
+          let position = 0;
+          let direction = 1;
+
+          function moveText() {
+            position += direction;
+            movingText.style.left = position + 'px';
+
+            // Change text color (you can customize this logic)
+            const color = `rgb(${Math.random() * 255}, ${Math.random() * 255}, ${Math.random() * 255})`;
+            movingText.style.color = color;
+
+            // Reverse direction when reaching the edges
+            const maxWidth = window.innerWidth - movingText.clientWidth;
+            if (position >= maxWidth || position <= 0) {
+              direction *= -1;
+            }
+
+            requestAnimationFrame(moveText);
+          }
+
+          // Start the animation
+          moveText();
+        </script>
+
+
+  
+    <br><br>
+    <br><br>
+
+    <div class="container">
+
+    <div class="row" width = "50%" padding = 200px>
+        <div class="col-sm-3">
+          <div class='line'>
+         <h4 class='flipY' style ="background-color:#89CFF0;text-align: center; color: #FFFFFF ">Work Space</h4>
+        </div>
+          <a href="reserve_equipment.html"><img src="/static/download (8).jfif" alt= "Work Rooms" class = "image" width="100%"/></a>
+    <p style ="background-color: #FFFFFF;text-align: center; color:#89CFF0;">With the work spaces, you can do anything from constructing a birdhouse to weaving a blanket, these spaces can be utilised by many people at once, as there are multiple machines including power tools.</p>
+
+        </div>
+
+       <div class="col-sm-3">
+     <div class='line'>
+        <h4 class='flipY' style ="background-color:#FFFFFF;text-align: center;  color: #89CFF0;">Laser Cutter</h4>
+      </div>
+         <a href="reserve_equipment.html"><img src="/static/images (1).jfif" alt= "Laser Cutter" width="100%"/></a>
+    <p style ="background-color: #89CFF0;text-align: ce
+        nter;color:#FFFFFF;">Laser Cutter use a thin laser to melt, burn, or vaporize some materials. The Laser Cutter is very high speed and precise, and it can be used on various materials.</p>
+
+        </div>
+    <div class="col-sm-3">
+      <div class='line'>
+     <h4 class='flipY' style ="background-color:#89CFF0;text-align: center; color: #FFFFFF">3D Printer</h4>
+    </div>
+      <a href="reserve_equipment.html"><img src="/static/images (2).jfif" alt= "3D Printer" width="100%"/></a>
+    <p style ="background-color: #FFFFFF;text-align: center; color:#89CFF0;">3d printers are machines which produces 3d objects from a digital 3d model. These can be used when you aren't there as the process of 3d printing can take long.</p>
+
+        </div>
+    <div class="col-sm-3">
+      <div class='line'>
+     <h4 class='flipY' style ="background-color: #FFFFFF;text-align: center; color: #89CFF0">Sewing Machine</h4>
+    </div>
+      <a href="reserve_equipment.html"><img src="/static/download (9).jfif" alt= "Sewing Machines" width="100%"/></a>
+    <p style ="background-color: #89CFF0;text-align: center; color:#FFFFFF;">A sewing machine is a machine used to sew fabric and materials together with thread. There are many types of sewing machines including embroidery, serger, and quilting.</p>
+    </div>
+      <table border="0" cellpadding="1" cellspacing="1" style="width:684.333px; margin-left:auto ; margin-right:auto;background-color:#a1eeff ;" >
+        <tbody>
+        <tr>
+          <td style="text-align:left; width:443px">
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            <td style="text-align:center; width:443px">
+              <p><span style="font-family:Comic Sans MS,cursive; font-size: 25px;"><strong>How to Sew</strong></span></p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/1FknfumFPX8?si=8TdigTAXO3OT7fdq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></iframe>
+        <p>&nbsp;</p>
+        </td>
+          <td style="text-align:center; width:443px">
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+          </td>
+
+            <td style="text-align:center; width:443px">
+              <p><span style="font-family:Comic Sans MS,cursive; font-size: 25px;"><strong>How to Build Wooden Plane</strong></span></p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/OW4BWfC3cIA?si=2TDB4-R1KG2O5K7V" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p>&nbsp;</p>
+            </td>
+          <td style="text-align:center; width:443px">
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+          </td>
+         </tr>
+        </tbody>
+        </table>
+ 
+<footer align = "center">
+  <p>© 2024 & Issue Makerspace. This site reserves all rights to the content</p>
+</footer>
+
+
+
+</body>
+
+</html>

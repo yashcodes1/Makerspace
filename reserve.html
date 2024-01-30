@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <div class="jumbotron text-center" style="background-color: #89CFF0;">
+      <h1> </h1><br>
+      <!--<h2 class='flipY'>  The Amaze! Squad</h2><br>-->
+      <div class="waviy" style="background-color: #89CFF0;">
+        <span style="--i:1; background-color: #89CFF0;" </span>
+          <span style="--i:2">Reserve</span>
+          <span style="--i:3">Equipment</span>
+      </div><br>
+
+      <br><br>
+
+    </div>
+  </header>
+  <!--Start of Navbar Menu block-->
+  <nav class="navbar navbar-inverse" margin="auto property" style="background-color: #FF; text-color: #89CFF0;">
+    <div class="container-fluid">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="reserve.html">Reserve Equipment</a></li>
+        <li><a href="AboutUs.html">About Us</a></li>
+        <li><a href="membership.html">Membership Info</a></li>
+        <li><a href="tutorials.html">Tutorials</a></li>
+        <li><a href="Events.html">Events and Classes</a></li>
+      </ul>
+      </ul>
+    </div>
+  </nav>
+  <!--End of Navbar Menu block-->
+
+  <h2>Reservation Sign-up</h2>
+
+  <form action="/reserve.html">
+    
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Reserve Equipment/Space</title>
+      <style>
+        body {
+          margin: 0;
+          
+        }
+
+        .moving-text {
+          position: absolute;
+          font-size: 24px;
+          white-space: nowrap;
+        }
+      </style>
+    </head>
+    <body>
+      <div class="moving-text" id="movingText">Reserve our Items Today!</div>
+      <script>
+        const movingText = document.getElementById('movingText');
+
+        let position = 0;
+        let direction = 1;
+
+        function moveText() {
+          position += direction;
+          movingText.style.left = position + 'px';
+
+          // Change text color (you can customize this logic)
+          const color = `rgb(${Math.random() * 255}, ${Math.random() * 255}, ${Math.random() * 255})`;
+          movingText.style.color = color;
+
+          // Reverse direction when reaching the edges
+          const maxWidth = window.innerWidth - movingText.clientWidth;
+          if (position >= maxWidth || position <= 0) {
+            direction *= -1;
+          }
+
+          requestAnimationFrame(moveText);
+        }
+
+        // Start the animation
+        moveText();
+      </script>
+
+
+<p class="animate-charcter"><b></b></p>
+  <br><br>
+  <br><br>
+
+  <div class="container">
+
+  <div class="row" width = "50%" padding = 200px>
+      <div class="col-sm-3">
+        <div class='line'>
+       <h4 class='flipY' style ="background-color:#89CFF0;text-align: center; color: #FFFFFF ">Work Space</h4>
+      </div>
+        <a href="reserve_equipment.html"><img src="/static/download (8).jfif" alt= "Work Rooms" class = "image" width="100%"/></a>
+  <p style ="background-color: #FFFFFF;text-align: center; color:#89CFF0;">Lionel is the smartest in the Amaze Squad. He plays soccer and he is very kind and caring. He often helps other kids with math and science.</p>
+
+      </div>
+
+     <div class="col-sm-3">
+   <div class='line'>
+      <h4 class='flipY' style ="background-color:#FFFFFF;text-align: center;  color: #89CFF0;">Laser Cutter</h4>
+    </div>
+       <a href="reserve_equipment.html"><img src="/static/images (1).jfif" alt= "Laser Cutter" width="100%"/></a>
+  <p style ="background-color: #89CFF0;text-align: ce
+      nter;color:#FFFFFF;">Abdul is the adventurous and brave kid in the Amaze Squad. Another great trait of his is that he is determined, he also is very good at basketball.</p>
+
+      </div>
+  <div class="col-sm-3">
+    <div class='line'>
+   <h4 class='flipY' style ="background-color:#89CFF0;text-align: center; color: #FFFFFF">3D Printer</h4>
+  </div>
+    <a href="reserve_equipment.html"><img src="/static/images (2).jfif" alt= "3D Printer" width="100%"/></a>
+  <p style ="background-color: #FFFFFF;text-align: center; color:#89CFF0;">Robb is the sports kid in the group, he plays essentially all sports, but he particularly likes volleyball and baseball. He is the impulsive one in the group, but Jamaal helps him with patience.</p>
+
+      </div>
+  <div class="col-sm-3">
+    <div class='line'>
+   <h4 class='flipY' style ="background-color: #FFFFFF;text-align: center; color: #89CFF0">Sewing Machine</h4>
+  </div>
+    <a href="reserve_equipment.html"><img src="/static/download (9).jfif" alt= "Sewing Machines" width="100%"/></a>
+  <p style ="background-color: #89CFF0;text-align: center; color:#FFFFFF;">Jamaal is the most calm person in the Amaze Squad. He keeps everyone calm (Especially Robb!) and he is very good at solving social/emotional problems.</p>
+
+      </div>
+    </div>
+  </div>
+  </div>
+    <br>
+      <br>
+      <footer align = "center">
+         <p>© 2023 & Issue Makerspace. This site reserves all rights to the content</p>
+       </footer>
+    </body>
+</html>
